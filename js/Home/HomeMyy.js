@@ -41,9 +41,9 @@ export default class HomeMyy extends Component<Props> {
                         <Image style={styles.imageStyle1} source={require('../../res/images/img_shape2.png')}/>
                     </View>
                 </View>
-                <View style={{flexDirection: 'row', paddingLeft: 10, paddingRight: 10, marginTop: 10}}>
+                <View style={{flexDirection: 'row', paddingLeft: 10, paddingRight: 10, marginTop: 10,paddingBottom:10}}>
 
-                    <View>
+                    <View >
                         <Image source={{uri: roadurl}}
                                style={{width: imageWidth, height: imageHeight, resizeMode: 'stretch'}}/>
                         <Text style={{
@@ -54,6 +54,7 @@ export default class HomeMyy extends Component<Props> {
                             backgroundColor: '#80000000',
                             marginStart: 5
                         }}>上海普陀区桃浦镇</Text>
+                        <Image style={{width:48,height:48,position:'absolute',bottom:(imageHeight-48)/2,left:(imageWidth-48)/2}} source={require('../../res/images/play_img.png')}/>
                     </View>
                     <View style={{justifyContent: 'space-around', flexDirection: 'column',alignItems:'center', flex: 1}}>
                         <View style={{flexDirection: 'row'}}>

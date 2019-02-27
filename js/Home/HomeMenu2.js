@@ -22,7 +22,7 @@ export default class HomeMenu2 extends Component<Props> {
 
     render() {
         return (
-            <ImageBackground style={{flex: 1,margin:3,overlayColor:'#ffffff'}} source={this.props.bg}>
+            <ImageBackground imageStyle={{borderRadius:5}} style={{flex: 1,margin:3,overlayColor:'#ffffff',borderRadius:30}} source={this.props.bg}>
                 <View style={styles.contain}>
                     <View>
                         <Text style={styles.font1}>{this.props.title}</Text>
@@ -31,6 +31,7 @@ export default class HomeMenu2 extends Component<Props> {
                     <Image style={styles.image} source={this.props.icon}/>
                 </View>
             </ImageBackground>
+
         );
     }
 
