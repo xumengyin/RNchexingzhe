@@ -90,7 +90,6 @@ export default class HomeViewPager extends Component<Props> {
             </View>
         );
     }
-
 }
 const ratio = 10 / 23;
 const styles = StyleSheet.create({

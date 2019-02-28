@@ -9,10 +9,11 @@ import {
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
 import HomeFragment from '../Home/homeFragment';
-import Find from '../Find/find';
-import Mine from '../Mine/mine';
-import More from '../More/more';
+import Data from './Data';
+import Mine from './Mine';
 import {Navigator} from "react-native-deprecated-custom-components"
+import News from "./News";
+import Shop from "./Shop";
 export default class MainTab extends Component {
     constructor(props) {
         super(props);
@@ -54,7 +55,7 @@ export default class MainTab extends Component {
                     onPress={() => this.setState({ selectedTab: 'shop' }) }
                 >
 
-                    <Find />
+                    <Shop />
 
                 </TabNavigator.Item>
                 <TabNavigator.Item
@@ -65,7 +66,7 @@ export default class MainTab extends Component {
                     selected={this.state.selectedTab === 'news'}
                     onPress={() => this.setState({ selectedTab: 'news' }) }
                 >
-                    <Mine />
+                    <News />
                 </TabNavigator.Item>
                 <TabNavigator.Item
 
@@ -75,7 +76,7 @@ export default class MainTab extends Component {
                     selected={this.state.selectedTab === 'data'}
                     onPress={() => this.setState({ selectedTab: 'data' }) }
                 >
-                    <Mine />
+                    <Data />
                 </TabNavigator.Item>
                 <TabNavigator.Item
 
@@ -85,7 +86,7 @@ export default class MainTab extends Component {
                     selected={this.state.selectedTab === 'more'}
                     onPress={() => this.setState({ selectedTab: 'more' }) }
                 >
-                    <More />
+                    <Mine />
                 </TabNavigator.Item>
 
             </TabNavigator>
