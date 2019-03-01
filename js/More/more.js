@@ -32,7 +32,7 @@ export default class More extends Component<Props> {
                 <View style={{marginTop:20}}>
                     <MoreCommonItem
                         leftIconName={require('../../res/images/draft.png')}
-                        leftTitle='动脑学院钱包'
+                        leftTitle='钱包'
                         rightTitle='账户余额'
                     />
                     <MoreCommonItem
